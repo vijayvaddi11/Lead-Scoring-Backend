@@ -104,7 +104,7 @@ Get scored leads in JSON.
 
 ### GET /results
 Upload offer details.  
-![Postman Example](https://res.cloudinary.com/vijayvaddi/image/upload/Screenshot_from_2025-09-19_10-53-09_pofalo.png)
+![Postman Example](https://res.cloudinary.com/vijayvaddi/image/upload/Screenshot_from_2025-09-19_11-16-18_g1cclo.png)
 
 
 5.**GET /results/csv:**
