@@ -9,8 +9,8 @@ The system accepts CSV uploads, applies scoring logic, integrates with the OpenA
 - **Offer Management-** Upload product/offer details (name, value props, use cases).
 - **Lead Upload –** Upload leads in CSV format.
 - **Scoring Pipeline-** Rule-based scoring (Role relevance, Industry match, Data completeness).AI-powered scoring & classification (High / Medium / Low).
-- **results-**Fetch results in JSON or export as CSV.
-- **Dockerized-**Simple deployment with Docker.
+- **Results-** Fetch results in JSON or export as CSV.
+- **Dockerized-** Simple deployment with Docker.
 
 ---
 
@@ -21,6 +21,24 @@ The system accepts CSV uploads, applies scoring logic, integrates with the OpenA
 - **OpenAI API** – AI-powered scoring layer
 - **json2csv** – Export results as CSV
 - **Docker** – Containerization  
+
+
+
+---
+### POST /offer
+Upload offer details.  
+![Postman Example](https://res.cloudinary.com/vijayvaddi/image/upload/Screenshot_from_2025-09-19_10-39-37_lqycco.png)
+
+
+---
+## Input validation and error handling.
+![Image](https://res.cloudinary.com/vijayvaddi/image/upload/v1749043067/shbaavlq0lkuxum9mfwk.png)
+
+
+---
+## Campgrounds: Explore, leave a Review, and Share Campgrounds
+![Image](https://res.cloudinary.com/vijayvaddi/image/upload/v1749043057/izguqj5q61h4wr4h6rmu.png)
+
 
 
 ---
