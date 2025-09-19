@@ -22,25 +22,6 @@ The system accepts CSV uploads, applies scoring logic, integrates with the OpenA
 - **json2csv** – Export results as CSV
 - **Docker** – Containerization  
 
-
-
----
-### POST /offer
-Upload offer details.  
-![Postman Example](https://res.cloudinary.com/vijayvaddi/image/upload/Screenshot_from_2025-09-19_10-39-37_lqycco.png)
-
-
----
-## Input validation and error handling.
-![Image](https://res.cloudinary.com/vijayvaddi/image/upload/v1749043067/shbaavlq0lkuxum9mfwk.png)
-
-
----
-## Campgrounds: Explore, leave a Review, and Share Campgrounds
-![Image](https://res.cloudinary.com/vijayvaddi/image/upload/v1749043057/izguqj5q61h4wr4h6rmu.png)
-
-
-
 ---
 
 ## ⚡ Getting Started
@@ -49,45 +30,50 @@ Upload offer details.
 ```bash
 git clone https://github.com/your-username/lead-scoring-backend.git
 cd lead-scoring-backend
-
-
+```
 2. **Install dependencies:**
 
+```bash
 npm install
-
+```
 3. **Set up environment variables:**
 
 Create a .env file in the root directory with the following content:
-
+```bash
 OPENAI_API_KEY=your_openai_api_key
 PORT=5000
+```
 
 
 4. **Run Locaally:**
-
-npm start(server start at your given PORT)
+server start at your given PORT
+```bash
+npm start
+```
 ---
+
 ## Run with Docker
 1. **Build Image:**
-
+```bash
 docker build -t lead-scoring-backend 
-
+```
 2. **Run Container:**
-
+```bash
 docker run -p 5000:5000 --env-file .env lead-scoring-backend
-
+```
 ---
 # API Endpoints
 1. **POST /offer**
 
 Upload offer details.
 Request Body (JSON)
+```bash
 {
   "name": "AI Outreach Automation",
   "value_props": ["24/7 outreach", "6x more meetings"],
   "ideal_use_cases": ["B2B SaaS mid-market"]
 }
-
+```
 ### POST /offer
 Upload offer details.  
 ![Postman Example](https://res.cloudinary.com/vijayvaddi/image/upload/Screenshot_from_2025-09-19_10-39-37_lqycco.png)
@@ -96,8 +82,9 @@ Upload offer details.
 
 2. **POST /leads/upload:**
 Upload leads CSV
+```bash
 CSV Columns: name,role,company,industry,location,linkedin_bio
-
+```
 ### POST /leads/upload
 Upload offer details.  
 ![Postman Example](https://res.cloudinary.com/vijayvaddi/image/upload/Screenshot_from_2025-09-19_10-48-42_etluk0.png)
@@ -131,7 +118,7 @@ Download CSV file to our Computer
 ---
 ## Scoring Logic
 1.**Rule Layer (Max 50 points)**
-
+```bash
 Role relevance
   Decision maker → +20
   Influencer → +10
@@ -149,6 +136,7 @@ as High, Medium, or Low and explain in 1–2 sentences.
   Medium → 30
   Low → 10
 **Final Score = Rule Score + AI Points**
+```
 ---
 
 ## Deployment
