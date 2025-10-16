@@ -143,6 +143,3 @@ as High, Medium, or Low and explain in 1–2 sentences.
 This backend is deployed on Render:
 https://lead-scoring-backend-nhh6.onrender.com
 
-## Loom video URL
-https://www.loom.com/share/462c20ffe4c745d3a2c74ce9de48960c?sid=339f943c-10c0-44d1-9781-045bf06201c8
-
